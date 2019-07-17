@@ -50,3 +50,11 @@ class Student extends Instructor {
         return (`${student.name} has begun sprint challenge on ${subject}.`);
     };
 }
+
+class ProjectManager extends Student {
+    constructor(PMAttributes) {
+        super(PMAttributes);
+        this.gradClassName = PMAttributes.gradClassName;
+        this.favInstructor = PMAttributes.favInstructor;
+    }
+}
