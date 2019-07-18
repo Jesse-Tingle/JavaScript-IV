@@ -7,7 +7,7 @@ class Person {
     }
 
     speak() {
-        return (`Hello my name is ${this.name}, I am from ${this.location}.`);
+        console.log(`Hello my name is ${this.name}, I am from ${this.location}.`);
     }
 }
 
@@ -20,15 +20,15 @@ class Instructor extends Person {
     }
 
     demo(subject) {
-        return (`Today we are learning about ${subject}.`);
+        console.log(`Today we are learning about ${subject}.`);
     }
 
     grade(student, subject) {
-        return (`${student.name} receives a perfect score on ${subject}.`)
+        console.log(`${student.name} receives a perfect score on ${subject}.`)
     }
 }
 
-class Student extends Instructor {
+class Student extends Person {
     constructor(studentAttributes) {
         super(studentAttributes);
         this.previousBackground = studentAttributes.previousBackground;
@@ -38,23 +38,31 @@ class Student extends Instructor {
 
     listsSubjects() {
         for(let i = 0; i < this.favSubjects.length; i++) {
-            return (`${this.favSubjects[i]} is my favorite subject.`);
+            console.log(`${this.favSubjects[i]} is my favorite subject.`);
         }
     }
 
     PRAssignments(subject) {
-        return (`${student.name} has submitted a PR for ${subject}.`);
+        console.log(`${this.name} has submitted a PR for ${subject}.`);
     };
 
     sprintChallenge(subject) {
-        return (`${student.name} has begun sprint challenge on ${subject}.`);
+        console.log(`${this.name} has begun sprint challenge on ${subject}.`);
     };
 }
 
-class ProjectManager extends Student {
+class ProjectManager extends Instructor {
     constructor(PMAttributes) {
         super(PMAttributes);
         this.gradClassName = PMAttributes.gradClassName;
         this.favInstructor = PMAttributes.favInstructor;
+    }
+    
+    standUp(channel) {
+        console.log(`${this.name} announces to ${channel}, @channel standy times!`);
+    }
+
+    debugsCode(student, subject) {
+        console.log(`${this.name} debugs ${student.name}'s code on ${subject}.`)
     }
 }
