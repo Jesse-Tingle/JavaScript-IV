@@ -110,3 +110,28 @@ const jesse = new Student({
     className: 'WEB103',
     favSubjects: ['Javascript', 'HTML', 'CSS']
 });
+
+// Project Managers
+const joe = new ProjectManager({
+    name: 'Joe',
+    age: '29',
+    location: 'California',
+    gender: 'M',
+    specialty: 'Back-End',
+    favLanguage: 'C++',
+    catchPhrase: 'Bazinga!',
+    gradClassName: 'WEB104',
+    favInstructor: 'Cameron'
+});
+
+const amber = new ProjectManager({
+    name: 'Amber',
+    age: '30',
+    location: 'Alabama',
+    gender: 'F',
+    specialty: 'Front-End',
+    favLanguage: 'JavaScript',
+    catchPhrase: 'You know it!',
+    gradClassName: 'WEB106',
+    favInstructor: 'Dan'
+});
