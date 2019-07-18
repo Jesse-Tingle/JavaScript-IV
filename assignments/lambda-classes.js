@@ -68,6 +68,28 @@ class ProjectManager extends Instructor {
 }
 
 
+
+// Instructors
+const cameron = new Instructor({
+    name: 'Cameron',
+    age: '32',
+    location: 'Florida',
+    gender: 'M',
+    specialty: 'Back-End',
+    favLanguage: 'C#',
+    catchPhrase: 'Awesome Sauce!'
+});
+
+const dan = new Instructor({
+    name: 'Dan',
+    age: '40',
+    location: 'North Carolina',
+    gender: 'F',
+    specialty: 'JavaScript',
+    favLanguage: 'Python',
+    catchPhrase: 'Is that your final answer?'
+});
+
 // Students
 const amy = new Student({
     name: 'Amy',
