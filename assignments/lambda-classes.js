@@ -139,20 +139,20 @@ const amber = new ProjectManager({
 
 //Test console loggs
 
-console.log(cameron.name)
-cameron.demo(`HTML`);
-cameron.grade(amy, `JavaScript`);
+console.log(cameron.name) // Cameron
+cameron.demo(`HTML`); // Today we are learning about HTML.
+cameron.grade(amy, `JavaScript`); // Amy receives a perfect score on JavaScript.
 
 
-dan.speak();
-console.log(dan.specialty);
+dan.speak(); // Hello my name is Dan, I am from North Carolina.
+console.log(dan.specialty); // JavaScript
 
 
-console.log(amy.age);
-amy.listsSubjects();
-amy.PRAssignments(`JavaScript`);
-amy.sprintChallenge('HTML');
+console.log(amy.age); // 36
+amy.listsSubjects(); // HTML is my favorite subject. React is my favorite subject. JavaScript is my favorite subject.
+amy.PRAssignments(`JavaScript`); // Amy has submitted a PR for JavaScript.
+amy.sprintChallenge('HTML'); // Amy has begun sprint challenge on HTML.
 
 
-amber.standUp(`webpt8`);
-amber.debugsCode(jesse, `JavaScript`);
+amber.standUp(`webpt8`); // Amber announces to webpt8, @channel standy times!
+amber.debugsCode(jesse, `JavaScript`); // Amber debugs Jesse's code on JavaScript.
