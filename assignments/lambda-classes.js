@@ -135,3 +135,24 @@ const amber = new ProjectManager({
     gradClassName: 'WEB106',
     favInstructor: 'Dan'
 });
+
+
+//Test console loggs
+
+console.log(cameron.name)
+cameron.demo(`HTML`);
+cameron.grade(amy, `JavaScript`);
+
+
+dan.speak();
+console.log(dan.specialty);
+
+
+console.log(amy.age);
+amy.listsSubjects();
+amy.PRAssignments(`JavaScript`);
+amy.sprintChallenge('HTML');
+
+
+amber.standUp(`webpt8`);
+amber.debugsCode(jesse, `JavaScript`);
