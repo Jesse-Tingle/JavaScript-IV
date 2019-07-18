@@ -37,9 +37,11 @@ class Student extends Person {
     }
 
     listsSubjects() {
+        let favSub = [];
         for(let i = 0; i < this.favSubjects.length; i++) {
-            console.log(`${this.favSubjects[i]} is my favorite subject.`);
+            favSub.push(this.favSubjects[i]);
         }
+        console.log(`These are my favorite subjects: ${favSub}.`);
     }
 
     PRAssignments(subject) {
@@ -98,7 +100,7 @@ const amy = new Student({
     gender: 'F',
     previousBackground: 'Stay at home mom',
     className: 'CS103',
-    favSubjects: ['HTML', 'React', 'JavaScript']
+    favSubjects: ['HTML', ' React', ' JavaScript']
 });
 
 const jesse = new Student({
@@ -149,7 +151,7 @@ console.log(dan.specialty); // JavaScript
 
 
 console.log(amy.age); // 36
-amy.listsSubjects(); // HTML is my favorite subject. React is my favorite subject. JavaScript is my favorite subject.
+amy.listsSubjects(); // These are my favorite subjects: HTML, React, JavaScript.
 amy.PRAssignments(`JavaScript`); // Amy has submitted a PR for JavaScript.
 amy.sprintChallenge('HTML'); // Amy has begun sprint challenge on HTML.
 
